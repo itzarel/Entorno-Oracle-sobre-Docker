@@ -1,0 +1,6 @@
+Extras:
+
+1. Plugin docker ubuntu
+2. Plugin docker intelliJ
+3. Si no logea en el acceso a WL console. ELiminar los elementos de navegación (storage, cache...)
+4. Conexión a la BBDD desde IntelliJ (si es versión ultimate)

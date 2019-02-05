@@ -1,0 +1,15 @@
+# Test
+
+## Pregunta 1 
+
+#### ¿Cómo se puede obtener una nueva imagen desde el respositorio de docker?
+
+1. docker push
+
+2. docker pull
+
+3. docker run
+
+3. docker get
+
+> Respuesta [ 3 ]

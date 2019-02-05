@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Después que aparezca que el servidor está corriendo:"
+echo "'<Dec 14, 2018 11:25:35,488 AM GMT> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING.> '"
+
+sensible-browser https://localhots:9002/console
+
+echo "A continuación deberemos escribir las credenciales que pusimos previamente en el archivo 'domain.properties'"
+
+# TODO: mostrar las secciones que el alumno podría ver
+echo "Go to desploiments"
+echo "Go to ..."

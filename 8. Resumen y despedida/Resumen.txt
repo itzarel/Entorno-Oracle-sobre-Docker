@@ -1,0 +1,10 @@
+En este curso hemos tratado:
+
+
+------------------------------------------------------------------------------------------
+
+Siguiente reto:
+
+En el presente curso actual se ha creado una API (Java) y se ha instalado esta aplicación (la API de Java) manualmente en el servidor de Weblogic, se ha hecho así para que el alumno quede familiarizado con el entorno Weblogic.
+El siguiente reto o siguiente curso consistirá en crear sobre el entorno Oracle-docker  un CD (Continuous Delivery) basado en DevOps, para ello el usuario haría un commit y de forma automática todo quedará desplegado y ejecutado en el Weblogic y en el Oracle DB, de forma que ya no se tendría que hacer manualmente y toda la ejecución quedaría registrada.
+Esto permite un entorno muchísimo más dinámico de cara a trabajar en local (en el propio ordenador) o en un entorno de pruebas o incluso un entorno de producción.

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Primeramente crear el war que vamos a copiar, sino no continuar el script..."
+echo ""
+echo "Para pasar el EAR emplear el comando 'docker cp'"
+echo ""
+echo "Primero crearemos la carpeta donde copiaremos nuestra app"
+docker exec -it oracle-wl bash -c "mkdir apps_to_deploy"
+
+echo "A continuacion se deberia mostrar:"
+docker exec -it oracle-wl bash -c "ls -lah | grep apps_to_deploy"
+
+docker cp /home/dsebastm/testdb.trace.db oracle-wl:/u01/oracle/wlserver
