@@ -1,7 +1,0 @@
-Para validar el correcto funcionamiento:
-	Instalar el API de la clase anterior
-
-
-docker cp "/home/dsebastm/Documentos/OpenWebinar/Temario/Documentos/Entorno Oracle sobre Docker/4. Consumo de la Oracle DB a travé
-s de un API Rest/RETO 4.1 - Desarrollo de un endpoint para consumir una propiedad de la tabla/OpenwebinarDockerAPI/openwebinar_mavel/app-rest-api/target/app-rest-api-0.1.0-SNAPSHOT.war" oracle-wl:/u01/oracle/apps_to_deploy/
-
