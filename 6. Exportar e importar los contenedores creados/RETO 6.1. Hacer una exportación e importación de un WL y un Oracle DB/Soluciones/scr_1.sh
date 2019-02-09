@@ -9,3 +9,5 @@ docker export real-oracle-db | gzip > $EXPORT_FOLDER/oracle_db.gz
 
 zcat oracle_wl_backup.gz | docker import --message "Imported WL" - recovered-oracle-wl:wl_updated
 zcat oracle_db.gz | docker import --message "Imported DB" - recovered-oracle_db:db_updated
+
+docker images

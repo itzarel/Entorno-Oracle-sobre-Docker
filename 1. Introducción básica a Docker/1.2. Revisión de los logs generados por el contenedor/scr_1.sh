@@ -2,7 +2,7 @@
 
 echo "Después de 'docker pull hello-world'"
 
-# No tendremos ningún contenedor lanzado porque 'hello-world' finaliza.
+# NO TENEMOS ningún CONTENEDOR lanzado porque 'hello-world' finaliza.
 # Lo podremos ver con el siguiente comando, lista todos los contenedores ejecutándose
 sensible-browser https://docs.docker.com/engine/reference/commandline/ps/
 docker ps
@@ -23,6 +23,7 @@ docker logs <NAME>
 
 
 # Ahondando más, descargamos y ejecutamos un contenedor que no se pare por si mismo
+sensible-browser https://hub.docker.com/r/crccheck/hello-world
 docker pull crccheck/hello-world
    # Lanza el nuevo contenedor y a continuación ctrl+c (las opciones las veremos en próximas clases)
 docker run -p 80:8000 crccheck/hello-world
@@ -33,9 +34,17 @@ docker ps -a
 docker start <CONTAINER ID>
 curl localhost
 
+# ######################################## #
+# ##########    run VS start    ########## #
+# ######################################## #
+
 docker stop <CONTAINER ID>
 curl localhost
 
    # También se puede lanzar con el nombre
 docker start <NAME>
 curl localhost
+
+
+
+# 1.3. Creación de una cuenta para descargar las imágenes de Oracle

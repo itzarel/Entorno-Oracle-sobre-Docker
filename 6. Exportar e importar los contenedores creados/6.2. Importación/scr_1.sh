@@ -5,7 +5,7 @@ sensible-browser https://docs.docker.com/engine/reference/commandline/import/
 
 # export MY_HOME=dsebastm
 # export EXPORT_FOLDER=/home/$MY_HOME/docker/exported_images
-cd $SH_FOLDER
+cd $EXPORT_FOLDER
 
 echo "docker import [OPTIONS] file - [REPOSITORY[:TAG]]"
 
@@ -14,6 +14,7 @@ echo "docker import [OPTIONS] file - [REPOSITORY[:TAG]]"
 echo 'tar <FILE> | docker import - <REPOSITORY>'
 tar -c first_example.tar | docker import - first_import_example
 docker images | grep first_import_example
+docker history first_import_example
 
 # Importar sin compresión & con mensaje de opción
 echo 'tar <FILE> | docker import --message "<MESSAGE>" - <REPOSITORY>'
@@ -35,4 +36,6 @@ docker images | grep fourth_import_example
 # Importar con compresión
 echo 'tar <FILE> | docker import - <REPOSITORY>'
 zcat fourth_example.gz | docker import - fifth_import_example
+
+
 docker images

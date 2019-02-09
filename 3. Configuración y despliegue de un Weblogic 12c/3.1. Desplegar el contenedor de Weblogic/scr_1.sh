@@ -7,8 +7,12 @@ export MY_HOME=dsebastm
 
 # Go to your home, in my case 'dsebastm'
 cd /home/$MY_HOME
-echo "username=weblogic" >> domain.properties
-echo "password=1234webl" >> domain.properties
+
+cat <<EOF > domain.properties
+username=weblogic
+password=1234webl
+EOF
+
 # nano domain.properties
 # And add:
 #   username=weblogic
@@ -23,15 +27,22 @@ cat $PWD_WL
 
 # Start the Oracle DB container. Take careful, the ports must be open
   # Oracle DB default port
-netstat -vap | grep 7001
+netstat -anop | grep 7001
   # Database Home Page (APEX)
-netstat -vap | grep 9002
+netstat -anop | grep 9002
 # To run the WL container, Oracle documentation said
 docker run -d --name oracle-wl -p 7001:7001 -p 9002:9002 -v $PWD_WL:/u01/oracle/properties store/oracle/weblogic:12.2.1.3-dev
-# This command generates an error, it is not correct.
-#   It wont create the folder 'properties'. So it will launch an exception
+   #   https://hub.docker.com/u/dsebastm/content/sub-4d5e862e-2d77-4086-a3d1-6b74dffe2a4c
+      #  Sección: Providing Admin server Username and Password
+      #  Error: NO INDICAR el archivo 'domain.properties'
+
+# This command generates an ¡¡¡ERROR!!!, it is not correct.
+#   NO CREARÁ la carpeta 'properties' y por lo tanto lanzará execpción
 docker logs oracle-wl
-docker rm oracle-wlb
+   #   mkdir: cannot create directory '/u01/oracle/properties': File exists
+   #   A properties file with the username and password needs to be supplied.
+docker rm oracle-wl
+
 # Now, see the docker path. It has the correct one
 docker run -d --name oracle-wl -p 7001:7001 -p 9002:9002 -v $PWD_WL:/u01/oracle/properties/domain.properties store/oracle/weblogic:12.2.1.3-dev
 

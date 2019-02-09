@@ -1,0 +1,11 @@
+Para validar el correcto funcionamiento:
+	Instalar el API de la clase anterior
+
+
+Dejar el WAR en $SH_FOLDER
+	/home/dsebastm/docker/sharedFolder
+	Que se corresponde con:
+		/u01/oracle/shared_folder
+
+
+docker exec -it oracle-wl-new-env-shared-folder bash -c "ls /u01/oracle/shared_folder"

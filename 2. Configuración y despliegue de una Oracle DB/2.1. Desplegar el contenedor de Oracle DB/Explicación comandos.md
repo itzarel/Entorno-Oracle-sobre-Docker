@@ -4,17 +4,21 @@
 
 Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
 
-&nbsp;&nbsp;&nbsp;-v --verbose
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tell the user what is going on by being verbose. Especially print  some
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; useful information about unconfigured address families.
-
 &nbsp;&nbsp;&nbsp;-a, --all
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Show  both  listening and non-listening sockets.  With the --interfaces
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; option, show interfaces that are not up
+
+&nbsp;&nbsp;&nbsp;-n --numeric
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Show numerical addresses instead of trying to determine symbolic host, port or user names.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; useful information about unconfigured address families.
+
+&nbsp;&nbsp;&nbsp;-o --timers
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Include information related to networking timers.
 
 &nbsp;&nbsp;&nbsp;-p, --program
 
