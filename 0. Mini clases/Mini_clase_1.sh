@@ -6,7 +6,9 @@ echo "*****************************"
 
 docker pull store/oracle/database-enterprise:12.2.0.1
 
-docker run -d -p 8080:8080 -p 1521:1521 --name real-oracle-db store/oracle/database-enterprise:12.2.0.1
+docker run -d -p 8080:8080 -p 1521:1521 --name oracle-db store/oracle/database-enterprise:12.2.0.1
+
+docker exec -it oracle-db bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
 
 echo "HostName: localhost (hostname will be System IP address if you installed in any Linux VM)"
 echo "Port: 1521"

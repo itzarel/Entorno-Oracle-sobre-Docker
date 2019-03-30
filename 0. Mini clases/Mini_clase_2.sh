@@ -11,4 +11,4 @@ docker run -d --name oracle-wl-mini-class -p 7001:7001 -p 9002:9002 -v /home/dse
 docker ps
 docker logs oracle-wl
 
-sensible-browser https://localhots:9002/console
+sensible-browser https://localhost:9002/console/

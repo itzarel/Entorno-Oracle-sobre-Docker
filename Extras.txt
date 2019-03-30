@@ -1,6 +1,18 @@
-Extras:
+EXTRAS:
+------
+------
 
-1. Plugin docker ubuntu
-2. Plugin docker intelliJ
+1. Existe un plugin de docker para Ubuntu que elimina la necesidad de lanzar los comandos, poniendo un menú en la barra superior. Se llama: Docker integration
+
+https://extensions.gnome.org/extension/1065/docker-status/
+
+
+2. Al igual que para Ubuntu existe un plugin de docker para IntelliJ que permite la misma operación que "Docker integration".
+
+https://www.jetbrains.com/help/idea/docker.html
+
+ 
 3. Si no logea en el acceso a WL console. ELiminar los elementos de navegación (storage, cache...)
-4. Conexión a la BBDD desde IntelliJ (si es versión ultimate)
+
+
+4. Desde IntelliJ se pueden realizar conexiones a BBDD dockerizadas (si es versión ultimate)
